@@ -1,1 +1,22 @@
 #calc testing
+
+name: Project test cases
+on:
+  push:
+    branches: [master]
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.x"
+      - name: Install dependedncies
+        run: npm Install
+      - name: Test run
+        run: npm test    
+
+ 
