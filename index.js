@@ -31,14 +31,14 @@ switch (operation) {
     console.log(Math.sin(num1));
     break;
   case "cos":
-    console.log(Math.sin(cos));
+    console.log(Math.cos(num1));
     break;
   case "tan":
-    console.log(Math.sin(tan));
+    console.log(Math.tan(num1));
     break;
   case "random":
     if(num1){
-      console.log(Math.florr(Math.random()*num1*10));
+      console.log(Math.floor(Math.random()*num1*10));
     }else if(!num1){
       console.log("Provide length for random number generation.")
     }
